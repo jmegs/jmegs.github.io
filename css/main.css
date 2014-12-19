@@ -4,7 +4,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url('../img/bg.jpg');
+  background-image: url('../img/bg2.jpg');
   background-size: cover;
   background-position: center;
   z-index: 2;
@@ -16,4 +16,6 @@
     left: 5%;
     margin-right: 5%;
 } 
+
+.hairline {font-weight: 100;}
 
