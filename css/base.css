@@ -28,7 +28,7 @@
 ================================================== */
 	body {
 		background: #fff;
-		font: 14px/1.6 "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font: 14px/1.6 "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #f7f7f7;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
@@ -38,8 +38,9 @@
 /* #Typography
 ================================================== */
 h1, h2, h3, h4, h5, h6 {
-	color: #f7f7f7;
-	font-weight: bold;
+    color: #f7f7f7;
+	font-weight: 900;
+    text-transform: uppercase
 }
 
 h1 			{ font-size: 60px; line-height: 1.2; }
@@ -57,5 +58,5 @@ hr 			{ border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 3
 
 /* #Links
 ================================================== */
-	a { color: #f7f7f7; text-decoration: underline; outline: 0; }
+	a { color: #f7f7f7; text-decoration: underline; outline: 0; font-weight: }
 	a:hover, a:focus { color: #DEDEDE; }
