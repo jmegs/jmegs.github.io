@@ -43,6 +43,7 @@ font: 1em/1.5 arial, sans-serif;
 color: #373737;
 }
 
+
 h1 {
 	font: 1.5em/1.5 'League Spartan', arial, sans-serif;
 	color: #222222;
@@ -57,6 +58,9 @@ a {
 a:hover, a:focus {
 	color: #000;
 }
+
+main ul {padding-top: 1em;}
+
 
 /* Layout
 ================================================== */
@@ -75,13 +79,14 @@ main {
 	align-items:center;
 }
 
-
-main > * {vertical-align: middle;}
-
+.avatar {display: none;}
 aside {overflow: hidden;}
 
-aside img {max-width: 100%; min-height: 100%}
+aside img {max-width: 100%; }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 53.125em) {
 	main, aside {float: none; width: 100%;}
+	aside {display: none;}
+	.avatar {display: block;}
+	.avatar { margin: -1em auto 1em auto;}
  }
