@@ -97,3 +97,41 @@ aside img {max-width: 100%; }
  @media only screen and (min-width: 100em) {
  	aside {width: 45%; padding-left: 5%;}
  }
+
+ /*! Animate.css by Dan Eden https://github.com/daneden/animate.css
+================================================== */
+body {
+  animation-delay: .2s;
+}
+
+ .animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
