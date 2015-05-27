@@ -74,19 +74,26 @@ main {float: right;} aside {float: left;}
 
 main {
 	text-align: center;
-	display:flex;
-	justify-content:center;
-	align-items:center;
+}
+
+main .inner {
+	margin: 0 auto;
+	padding-top: 20em;
 }
 
 .avatar {display: none;}
-aside {overflow: hidden;}
+aside {background-color: #000;}
 
 aside img {max-width: 100%; }
 
 @media only screen and (max-width: 53.125em) {
 	main, aside {float: none; width: 100%;}
+	main .inner {padding-top: 10em;}
 	aside {display: none;}
 	.avatar {display: block;}
 	.avatar { margin: -1em auto 1em auto;}
+ }
+
+ @media only screen and (min-width: 100em) {
+ 	aside {width: 45%; padding-left: 5%;}
  }
