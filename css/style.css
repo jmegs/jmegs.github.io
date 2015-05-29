@@ -33,7 +33,7 @@
          url('leaguespartan-bold.woff') format('woff'),
          url('leaguespartan-bold.ttf') format('truetype'),
          url('leaguespartan-bold.svg#league_spartanbold') format('svg');
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 
 }
