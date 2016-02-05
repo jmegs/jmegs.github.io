@@ -2,13 +2,15 @@
 	@include outer-container
 
 .block
-	@include span-columns(3)
+	@include clearfix
+	@include media($desktop)
+		@include span-columns(3)
 
 .icon, .label
-	float: left
+	// float: left
 
 .icon
-	margin-right: 20px
+	@include span-columns(1 of 3)
 
 .label
-	max-width: 66%
+	@include span-columns(2 of 3)

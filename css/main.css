@@ -66,7 +66,10 @@ body {
 
 .upper {
   background: green;
-  height: 585px; }
+  height: 350px; }
+  @media screen and (min-width: 850px) {
+    .upper {
+      height: 585px; } }
 
 .text-block {
   background: #ccc;
@@ -87,21 +90,33 @@ body {
     content: "";
     display: table; }
 
-.block {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%; }
-  .block:last-child {
-    margin-right: 0; }
-
-.icon, .label {
-  float: left; }
+.block::after {
+  clear: both;
+  content: "";
+  display: table; }
+@media screen and (min-width: 850px) {
+  .block {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .block:last-child {
+      margin-right: 0; } }
 
 .icon {
-  margin-right: 20px; }
+  float: left;
+  display: block;
+  margin-right: 10.1484%;
+  width: 26.56773%; }
+  .icon:last-child {
+    margin-right: 0; }
 
 .label {
-  max-width: 66%; }
+  float: left;
+  display: block;
+  margin-right: 10.1484%;
+  width: 63.28387%; }
+  .label:last-child {
+    margin-right: 0; }
 
 /*# sourceMappingURL=main.css.map */
