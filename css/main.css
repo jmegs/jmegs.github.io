@@ -62,17 +62,27 @@ body {
   line-height: 1.4;
   text-transform: uppercase;
   letter-spacing: 4px;
-  color: white; }
+  color: white;
+  margin-bottom: 0.9375em; }
+
+.subtitle {
+  margin-bottom: 1.375em; }
+
+h1 {
+  font-size: 3.4375em;
+  font-weight: bold;
+  line-height: 1.1;
+  margin-bottom: 0.3125em; }
 
 .upper {
-  background: green;
+  background: #ccc;
+  padding: 2.75em 1.25em 0 1.25em;
   height: 350px; }
   @media screen and (min-width: 850px) {
     .upper {
       height: 585px; } }
 
 .text-block {
-  background: #ccc;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
@@ -90,25 +100,28 @@ body {
     content: "";
     display: table; }
 
-.block::after {
-  clear: both;
-  content: "";
-  display: table; }
-@media screen and (min-width: 850px) {
-  .block {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%; }
-    .block:last-child {
-      margin-right: 0; } }
+.block {
+  padding: 0 1.25em; }
+  .block::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (min-width: 850px) {
+    .block {
+      padding: 0;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      .block:last-child {
+        margin-right: 0; } }
 
-.icon {
+.icon-container {
   float: left;
   display: block;
   margin-right: 10.1484%;
   width: 26.56773%; }
-  .icon:last-child {
+  .icon-container:last-child {
     margin-right: 0; }
 
 .label {
@@ -118,5 +131,10 @@ body {
   width: 63.28387%; }
   .label:last-child {
     margin-right: 0; }
+
+.icon {
+  height: 4.25em;
+  width: auto;
+  max-width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

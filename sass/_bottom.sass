@@ -3,14 +3,21 @@
 
 .block
 	@include clearfix
+	padding: 0 em(20px)
 	@include media($desktop)
+		padding: 0
 		@include span-columns(3)
 
 .icon, .label
 	// float: left
 
-.icon
+.icon-container
 	@include span-columns(1 of 3)
 
 .label
 	@include span-columns(2 of 3)
+
+.icon
+	height: em(68px)
+	width: auto
+	max-width: 100%
