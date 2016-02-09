@@ -58,50 +58,81 @@ body {
   color: #222; }
 
 .smallcaps {
-  font-size: 18px;
+  font-size: 0.5625em;
   line-height: 1.4;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 0.25em;
   color: white;
   margin-bottom: 0.9375em; }
+  @media screen and (min-width: 850px) {
+    .smallcaps {
+      font-size: 0.6875em; } }
+
+a.smallcaps {
+  text-decoration: none; }
 
 .subtitle {
+  font-weight: 300;
+  font-style: oblique;
   margin-bottom: 1.375em; }
+  @media screen and (min-width: 850px) {
+    .subtitle {
+      font-size: 1.5em; } }
+
+.block-title {
+  font-weight: bold; }
 
 h1 {
   font-size: 3.4375em;
   font-weight: bold;
   line-height: 1.1;
   margin-bottom: 0.3125em; }
+  @media screen and (min-width: 850px) {
+    h1 {
+      font-size: 8.4375em;
+      margin-bottom: 0.125em; } }
 
 .upper {
-  background: #ccc;
+  background: linear-gradient(rgba(34, 40, 49, 0.45), rgba(57, 62, 70, 0.45)), url(../img/bg.jpg) no-repeat top center;
+  background-size: cover;
   padding: 2.75em 1.25em 0 1.25em;
-  height: 350px; }
+  height: 21.875em; }
   @media screen and (min-width: 850px) {
     .upper {
-      height: 585px; } }
+      height: 34.375em; } }
 
 .text-block {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  color: white; }
   .text-block::after {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (min-width: 850px) {
+    .text-block {
+      padding-top: 3.125em; } }
 
 .lower {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-top: 0.9375em; }
   .lower::after {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (min-width: 850px) {
+    .lower {
+      margin-top: 1.875em; } }
+
+hr {
+  border: 0.15625em solid;
+  margin-bottom: 1.25em; }
 
 .block {
-  padding: 0 1.25em; }
+  padding: 1.25em; }
   .block::after {
     clear: both;
     content: "";
@@ -136,5 +167,8 @@ h1 {
   height: 4.25em;
   width: auto;
   max-width: 100%; }
+
+a.meta {
+  margin-top: 1.25em; }
 
 /*# sourceMappingURL=main.css.map */

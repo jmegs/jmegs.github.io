@@ -5,18 +5,33 @@ body
 	color: #222
 
 .smallcaps
-	font-size: 18px
+	font-size: em(9px)
 	line-height: 1.4
 	text-transform: uppercase
-	letter-spacing: 4px
+	letter-spacing: em(4px)
 	color: white
 	margin-bottom: em(15px)
+	@include media($desktop)
+		font-size: em(11px)
+
+a.smallcaps
+	text-decoration: none
 
 .subtitle
+	font-weight: 300
+	font-style: oblique
 	margin-bottom: em(22px)
+	@include media($desktop)
+		font-size: em(24px)
+
+.block-title
+	font-weight: bold
 
 h1
 	font-size: em(55px)
 	font-weight: bold
 	line-height: 1.1
 	margin-bottom: em(5px)
+	@include media($desktop)
+		font-size: em(135px)
+		margin-bottom: em(2px)
