@@ -3,6 +3,13 @@ body
 	font-size: 16px
 	line-height: 1.4
 	color: #222
+	text-rendering: optimizeLegibility
+
+a
+	text-decoration: none
+
+a.meta
+	color: #ccc
 
 .smallcaps
 	font-size: em(9px)
@@ -13,9 +20,6 @@ body
 	margin-bottom: em(15px)
 	@include media($desktop)
 		font-size: em(11px)
-
-a.smallcaps
-	text-decoration: none
 
 .subtitle
 	font-weight: 300
@@ -31,6 +35,7 @@ h1
 	font-size: em(55px)
 	font-weight: bold
 	line-height: 1.1
+	letter-spacing: em(-.2px)
 	margin-bottom: em(5px)
 	@include media($desktop)
 		font-size: em(135px)
