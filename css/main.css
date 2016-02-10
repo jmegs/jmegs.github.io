@@ -71,7 +71,7 @@ a.meta {
   letter-spacing: 0.25em;
   color: white;
   margin-bottom: 0.9375em; }
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 1050px) {
     .smallcaps {
       font-size: 0.6875em; } }
 
@@ -79,7 +79,7 @@ a.meta {
   font-weight: 300;
   font-style: oblique;
   margin-bottom: 1.375em; }
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 1050px) {
     .subtitle {
       font-size: 1.5em; } }
 
@@ -92,7 +92,10 @@ h1 {
   line-height: 1.1;
   letter-spacing: -0.0125em;
   margin-bottom: 0.3125em; }
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 851px) {
+    h1 {
+      font-size: 6.25em; } }
+  @media screen and (min-width: 1050px) {
     h1 {
       font-size: 8.4375em;
       margin-bottom: 0.125em; } }
@@ -102,7 +105,7 @@ h1 {
   background-size: cover;
   padding: 2.75em 1.25em 0 1.25em;
   height: 21.875em; }
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 1050px) {
     .upper {
       height: 34.375em; } }
 
@@ -115,7 +118,7 @@ h1 {
     clear: both;
     content: "";
     display: table; }
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 1050px) {
     .text-block {
       padding-top: 3.125em; } }
 
@@ -128,7 +131,7 @@ h1 {
     clear: both;
     content: "";
     display: table; }
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 1050px) {
     .lower {
       margin-top: 1.875em; } }
 
@@ -142,7 +145,7 @@ hr {
     clear: both;
     content: "";
     display: table; }
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 1050px) {
     .block {
       padding: 0;
       float: left;
