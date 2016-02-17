@@ -1,14 +1,28 @@
 // get the background working
 .upper
-	background: linear-gradient(rgba(34, 40, 49, 0.45), rgba(57, 62, 70, 0.45)), url(../img/bg.jpg) no-repeat top center
+	background: url(../img/ocean.jpeg) no-repeat top center
 	background-size: cover
-	padding: em(44px) em(20px) 0 em(20px)
+	// padding: em(44px) em(20px) 0 em(20px)
 	height: em(350px)
 	@include media($desktop)
-		height: em(550px)
+		height: em(730px)
 
-.text-block
+header
 	@include outer-container
 	color: white
 	@include media($desktop)
-		padding-top: em(50px)
+		@include span-columns(3)
+		@include shift(8)
+
+.text-block
+	border-left: 1px solid #fff
+	border-top: 1px solid #fff
+	padding: em(41px) em(59px) em(59px) em(34px)
+	@include media($desktop)
+		margin-top: em(347px)
+
+.upper hr
+	height: 1px
+	color: white
+	margin-top: em(13px)
+	margin-bottom: em(19px)
