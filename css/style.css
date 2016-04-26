@@ -23,8 +23,8 @@
 		border-collapse: collapse;
 		border-spacing: 0; }
 
-/* Type
-================================================== */		
+/* Style
+================================================== */
 @font-face {
     font-family: 'League Spartan';
     src: url('/fonts/leaguespartan-bold.eot');
@@ -61,42 +61,83 @@ a:hover, a:focus {
 
 main ul {padding-top: 1em;}
 
+.flex-split-left {
+	background: url(https://source.unsplash.com/random) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 /* Layout
 ================================================== */
 
-main, aside {
-	width: 50%;
-	height: 100vh;
+/* No flexbox layout with position relative and a minimum height */
+.no-flexbox .flex-split {
+	position:relative;
+	min-height:80vh;
 }
 
-main {float: right;} aside {float: left;}
-
-main {
-	text-align: center;
+/* stacked column below 48em */
+.flexbox .flex-split {
+	display:flex;
+	flex-direction:column;
+	min-height: 100vh;
+}
+/* split screen above 48em */
+@media all and (min-width:48em) {
+	.flexbox .flex-split {
+		flex-direction: row;
+	}
 }
 
-main .inner {
-	margin: 0 auto;
-	padding-top: 20em;
+/*
+	For no flexbox - give the child elements a minimum height and position them top and bottom
+	at 48ems make them float, otherwise just let the content fill the blocks on a small screen
+*/
+
+@media all and (min-width:48em) {
+	/* Common to both */
+	.flex-split > div {
+		width:50%;
+	}
+	.no-flexbox .flex-split > div {
+		min-height:50vh;
+		top:0;
+		bottom:0;
+		float:left;
+		position:absolute;
+
+
+	}
+	/* Anchor to their respective sides	 */
+	.no-flexbox .flex-split-left {
+		left:0;
+	}
+	.no-flexbox .flex-split-right {
+		right:0;
+	}
+
 }
 
-.avatar {display: none;}
-aside {background-color: #000;}
+/* For Flexbox - make the direct descendant divs content displayed in columns */
+.flexbox .flex-split > div {
 
-aside img {max-width: 100%; }
+	display:flex;
+	flex-direction:column;
 
-@media only screen and (max-width: 53.125em) {
-	main, aside {float: none; width: 100%;}
-	main .inner {padding-top: 10em;}
-	aside {display: none;}
-	.avatar {display: block;}
-	.avatar { margin: -1em auto 1em auto;}
- }
 
- @media only screen and (min-width: 100em) {
- 	aside {width: 45%; padding-left: 5%;}
- }
+}
+
+/* Use flexbox to vertically center align */
+.flex-split > div {
+
+	justify-content:center;
+	align-items:center;
+
+
+}
+
 
  /*! Animate.css by Dan Eden https://github.com/daneden/animate.css
 ================================================== */
