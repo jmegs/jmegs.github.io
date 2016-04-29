@@ -25,30 +25,28 @@
 
 /* Style
 ================================================== */
-@font-face {
-    font-family: 'League Spartan';
-    src: url('/fonts/leaguespartan-bold.eot');
-    src: url('/fonts/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/leaguespartan-bold.woff2') format('woff2'),
-         url('/fonts/leaguespartan-bold.woff') format('woff'),
-         url('/fonts/leaguespartan-bold.ttf') format('truetype'),
-         url('/fonts/leaguespartan-bold.svg#league_spartanbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 body {
-font: 1em/1.5 arial, sans-serif;
+font: 1em/1.5 "Slabo 13px", arial, sans-serif;
 color: #373737;
 }
 
 
 h1 {
-	font: 1.5em/1.5 'League Spartan', arial, sans-serif;
+	font-family: "Playfair Display",'League Spartan', arial, sans-serif;
+	font-size: 3em;
+	line-height: 1.2;
 	color: #222222;
-	line-height: 36px;
+	font-weight: 900;
+	margin-bottom: .2em;
 }
+
+@media all and (max-width:48em) {
+	h1 {
+		font-size: 2em;
+	}
+}
+
+
 
 a {
 	color: #373737;
@@ -62,11 +60,17 @@ a:hover, a:focus {
 main ul {padding-top: 1em;}
 
 .flex-split-left {
-	background: url(https://source.unsplash.com/random) no-repeat center center fixed;
+	background: url('../img/bg.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.subtle {
+	font-size: .75em;
+	color: grey;
+	margin-top: 2em;
 }
 
 /* Layout
@@ -84,6 +88,14 @@ main ul {padding-top: 1em;}
 	flex-direction:column;
 	min-height: 100vh;
 }
+
+@media all and (max-width:48em) {
+	.flexbox .flex-split {
+		align-items: center;
+		justify-content: center;
+	}
+}
+
 /* split screen above 48em */
 @media all and (min-width:48em) {
 	.flexbox .flex-split {
@@ -136,6 +148,12 @@ main ul {padding-top: 1em;}
 	align-items:center;
 
 
+}
+
+/* Position Content inside of right split */
+.inner {
+	padding: 0 5%;
+	text-align: center;
 }
 
 
