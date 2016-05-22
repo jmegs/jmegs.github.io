@@ -26,8 +26,11 @@
 /* Style
 ================================================== */
 body {
-font: 1em/1.5 "Slabo 13px", arial, sans-serif;
-color: #373737;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	line-height: 1.5;
+	color: #373737;
 }
 
 
@@ -70,7 +73,7 @@ main ul {padding-top: 1em;}
 .subtle {
 	font-size: .75em;
 	color: grey;
-	margin-top: 2em;
+	margin: 2em auto 0 auto;
 }
 
 /* Layout
