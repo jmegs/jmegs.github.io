@@ -28,32 +28,20 @@ Lazy personal site developer.
 
 	</script>
 </head>
-<body class="bg-green">
-	<div class="sans-serif fw9 f1 b near-black">
-		<p class="center tc"><del>#May1Reboot</del></p>
-		<p class="center tc"><del>#May2Reboot</del></p>
-		<p class="center tc"><del>#May3Reboot</del></p>
-		<p class="center tc"><del>#May4Reboot</del></p>
-		<p class="center tc"><del>#May5Reboot</del></p>
-		<p class="center tc"><del>#May6Reboot</del></p>
-		<p class="center tc"><del>#May7Reboot</del></p>
-		<p class="center tc"><del>#May8Reboot</del></p>
-		<p class="center tc"><del>#May9Reboot</del></p>
-		<p class="center tc"><del>#May10Reboot</del></p>
-		<p class="center tc"><del>#May11Reboot</del></p>
-		<p class="center tc"><del>#May12Reboot</del></p>
-		<p class="center tc"><del>#May13Reboot</del></p>
-		<p class="center tc"><del>#May14Reboot</del></p>
-		<p class="center tc"><del>#May15Reboot</del></p>
-		<p class="center tc"><del>#May16Reboot</del></p>
-		<p class="center tc"><del>#May17Reboot</del></p>
-		<p class="center tc"><del>#May18Reboot</del></p>
-		<p class="center tc"><del>#May19Reboot</del></p>
-		<p class="center tc"><del>#May20Reboot</del></p>
-		<p class="center tc"><del>#May21Reboot</del></p>
-		<p class="center tc"><del>#May22Reboot</del></p>
+<body class="bg-washed-yellow">
+	<div class="sans-serif fw9 f-headline-ns f1 b near-black vh-100 flex items-center">
+		<p class="center tc ma0"><del id="date"></del></p>
 	</div>
 <!-- <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script> -->
+<script src="js/moment.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+	function setDate () {
+		var date = moment().format("MMMMDo")
+		var el = document.getElementById("date");
+		el.innerHTML= "#" + date + "Reboot";
+	}
 
+	window.onload = setDate;
+</script>
 </body>
 </html>
