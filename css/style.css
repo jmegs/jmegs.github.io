@@ -1,2 +1,51 @@
-.h-100vh { height: 100vh; }
-.w-100vw { width: 100vw; }
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+} */
+
+.min-100 {
+  min-height: 100vh;
+}
+
+.lh-copy {
+  line-height: 1.8;
+}
+
+@media screen and (min-width: 30em) {
+  .measure-narrow-ns {
+    max-width: 16em;
+  }
+}
+
+.iowan {
+  font-family: "Iowan Old Style", georgia, serif;
+}
+
+.charter {
+  font-family: "Charter", georgia, serif;
+}
+
+.bg-white {
+  background-color: #f8f8f8;
+}
+
+.highlight {
+  background-color: #fdd65f;
+  color: black;
+}
+
+.hover-yellow:hover,
+.hover-yellow:focus {
+  color: #fdd65f;
+}
