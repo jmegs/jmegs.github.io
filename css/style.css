@@ -33,6 +33,17 @@ html {
 
 .marvin {
   font-family: "Marvin", Futura, sans-serif;
+  font-size: 12vw;
+}
+
+@media screen and (min-width: 1440px) {
+  .marvin {
+    font-size: 172px;
+  }
+}
+
+.cabin {
+  font-family: Cabin, sans-serif;
 }
 
 .bg-white {
