@@ -14,8 +14,11 @@ html {
   border: 0;
 } */
 
-.min-100 {
-  min-height: 100vh;
+@font-face {
+  font-family: "Marvin";
+  src: url("../fonts/MArvinVisions-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/MarvinVisions-Bold.woff2") format("woff2"),
+    url("fonts/MarvinVisions-Bold.woff") format("woff");
 }
 
 .lh-copy {
@@ -28,8 +31,8 @@ html {
   }
 }
 
-.charter {
-  font-family: "Charter", georgia, serif;
+.marvin {
+  font-family: "Marvin", Futura, sans-serif;
 }
 
 .bg-white {
@@ -37,11 +40,14 @@ html {
 }
 
 .highlight {
-  background-color: #fdd65f;
   color: black;
 }
 
 .hover-yellow:hover,
 .hover-yellow:focus {
   color: #fdd65f;
+}
+
+.mta {
+  margin-top: auto;
 }
