@@ -28,8 +28,8 @@ html {
   }
 }
 
-.charter {
-  font-family: "Charter", georgia, serif;
+.type {
+  font-family: 'Rubik', 'Charter', georgia, serif;
 }
 
 .bg-white {
@@ -44,4 +44,8 @@ html {
 .hover-yellow:hover,
 .hover-yellow:focus {
   color: #fdd65f;
+}
+
+.ofc {
+  object-fit: cover;
 }
